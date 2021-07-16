@@ -154,4 +154,18 @@ height: 50vw -> 50% of the view port's width
 The CSS Box Model:
 Content -> Padding -> Border -> Margin
 
+padding: 40px -> 40px of padding on each side
+padding: 10px 20px -> 10px top and bottom / 20px left and right
+padding: 10px 20px 30px 40px -> 10px top / 20px right / 30px bottom / 40px left
+margin: 40px -> 40px of margin on each side
+margin: 10px 20px -> 10px top and bottom / 20px left and right
+margin: 10px 20px 30px 40px -> 10px top / 20px right / 30px bottom / 40px left
+
+Block Display -> Occupies a new line [Div]
+Inline Display -> Doesn't start on a new line [Span]
+Inline-Block -> Doesn't start on a new line but has a block-level spacing [Images]
+
+float -> left / right / inherit / none
+display -> inline / block / inline-block / none
+
 */
