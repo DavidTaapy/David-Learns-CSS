@@ -1,0 +1,157 @@
+/* Body */
+
+body {
+    background-image: url("../images/Background.png");
+    font-family: Verdana, sans-serif
+}
+
+/* Title */
+
+.title {
+    color:rgb(188, 133, 11);
+}
+
+.title:hover {
+    color: #000000;
+}
+
+/* Subtitles */
+
+.subtitle {
+    color: #448844;
+}
+
+#contact-us {
+    color: #446699;
+}
+
+/* Lists */
+
+ul li:first-child {
+    color:#AA1111;
+}
+
+ul li:nth-child(4) {
+    color:#228822;
+}
+
+ul li:last-child {
+    color:#2222FF;
+}
+
+/* Links */
+
+a:link {
+    color: #000088;
+}
+
+a:visited {
+    color: #FF7755;
+}
+
+/* Gradients */
+
+div[id *= "gradient-1"] {
+    height: 50vh;
+    width: 100%;
+    background: radial-gradient(
+        farthest-side at bottom left,
+        rgba(255, 0, 255, 0.5),
+        transparent 1000px
+    ),
+    radial-gradient(
+        farthest-corner at bottom right,
+        rgba(255, 50, 50, 0.5),
+        transparent 1000px
+    ),
+    radial-gradient(
+        farthest-corner at top left,
+        rgba(255, 125, 125, 0.5),
+        transparent 1000px
+    ),
+    radial-gradient(
+        farthest-corner at top right,
+        rgba(255, 255, 125, 0.5),
+        transparent 1000px
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.gradient-text {
+    color: rgb(134, 30, 182);
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Festive', cursive;
+}
+
+/* Images */
+
+img[src^="../images/"] {
+    border: 4px solid rgba(188, 133, 11, 0.4);
+}
+
+#cool-image-1 {
+    width: 50%;
+}
+
+#cool-image-2 {
+    width: 45.5%
+}
+
+/*
+
+Specificity Hierarchy
+
+Inline Style -> style="color: red;"
+IDs -> #navbar
+Classes, Attributes and Pseudo-Classes -> .subtitles / img[src="../images"] / h2:hover
+Elements and Pseudo-Elements -> div / ::backdrop
+
+*/
+
+/* 
+
+Advanced Selectors
+
+h2 + a -> Means every link following a h2 header
+h2 ~ a -> Means every link following a h2 header with the same parents
+ul > li -> Means every list item that is a child (Direct descendant) of an unordered list
+ul li -> Means every list item that is a descendant of an unordered list
+
+img[src ^= "../images/"] -> Every image with src starting with said path
+img[src $= "../images/"] -> Every image with src ending with said path
+img[src *= "../images/"] -> Every image with src containing said path
+h2[class~=article-subtitle] -> Every h2 header with said class in a whitespace separated string
+h2[class|=article-subtitle] -> Every h2 header with said class with something behind it with a dash
+
+background-size: cover -> Proportion may be distorted to fill the space
+background-size: contain -> Proportion is maintained so image may be repeated to fill the space
+
+*/
+
+/*
+
+Units of Measurements
+
+height: 10cm / 10mm -> Absolute measurements
+height: 400px -> Pixels which is an absolute unit (Height of 400 px)
+height: 400pt -> Points which is slightly larger than pixel
+height: 400pc -> Picas which is larger than points
+
+height: 100% -> Percentage which is a relative unit (100% of parent's height)
+font-size: 2em -> Twice the size of the standard font size
+height: 100vh -> 100% of the view port's height
+height: 50vw -> 50% of the view port's width
+
+*/
+
+/*
+
+The CSS Box Model:
+Content -> Padding -> Border -> Margin
+
+*/
