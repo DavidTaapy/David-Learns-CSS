@@ -93,7 +93,7 @@ div[id *= "gradient-1"] {
 .container {
     background-color: mediumaquamarine;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: center;
 }
