@@ -88,6 +88,27 @@ div[id *= "gradient-1"] {
     font-family: 'Festive', cursive;
 }
 
+/* Flex Box */
+
+.container {
+    background-color: mediumaquamarine;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.container-item {
+    background: maroon;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+
+    width: 12.5%;
+    line-height: 50px;
+    margin: 10px
+}
+
 /* Images */
 
 img[src^="../images/"] {
@@ -95,11 +116,12 @@ img[src^="../images/"] {
 }
 
 #cool-image-1 {
-    width: 50%;
+    width: 49%;
+    transform: ScaleX(-1);
 }
 
 #cool-image-2 {
-    width: 45.5%
+    width: 49%;
 }
 
 /*
