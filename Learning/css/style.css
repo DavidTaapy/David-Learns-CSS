@@ -1,0 +1,356 @@
+/* Body */
+
+body {
+    background-image: url("../images/Background.png");
+    font-family: Verdana, sans-serif
+}
+
+/* Title */
+
+.title {
+    color:rgb(188, 133, 11);
+}
+
+.title:hover {
+    color: #000000;
+}
+
+/* Subtitles */
+
+.subtitle {
+    color: #448844;
+}
+
+#contact-us {
+    color: #446699;
+    margin-bottom: 5px;
+}
+
+/* Lists */
+
+ul li:first-child {
+    color:#AA1111;
+}
+
+ul li:nth-child(4) {
+    color:#228822;
+}
+
+ul li:last-child {
+    color:#2222FF;
+}
+
+/* Links */
+
+a:link {
+    color: #000088;
+}
+
+a:visited {
+    color: #FF7755;
+}
+
+/* Gradients */
+
+div[id *= "gradient-1"] {
+    height: 50vh;
+    width: 100%;
+    background: radial-gradient(
+        farthest-side at bottom left,
+        rgba(255, 0, 255, 0.5),
+        transparent 1000px
+    ),
+    radial-gradient(
+        farthest-corner at bottom right,
+        rgba(255, 50, 50, 0.5),
+        transparent 1000px
+    ),
+    radial-gradient(
+        farthest-corner at top left,
+        rgba(255, 125, 125, 0.5),
+        transparent 1000px
+    ),
+    radial-gradient(
+        farthest-corner at top right,
+        rgba(255, 255, 125, 0.5),
+        transparent 1000px
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.gradient-text {
+    color: rgb(134, 30, 182);
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Festive', cursive;
+}
+
+/* Flex Box */
+
+.container {
+    background-color: mediumaquamarine;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.container-item {
+    background: maroon;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+
+    width: 12.5%;
+    line-height: 50px;
+    margin: 10px;
+}
+
+/* Grids */
+
+.grid-container {
+    background-color: mediumaquamarine;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(7, calc(100% / 7));
+    grid-template-rows: auto auto;
+}
+
+.grid-item {
+    background:maroon;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    
+    line-height: 50px;
+    margin: 10px;
+}
+
+/* Images */
+
+img[src^="../images/"] {
+    border: 4px solid rgba(188, 133, 11, 0.4);
+}
+
+#cool-image-1 {
+    width: 49%;
+    transform: ScaleX(-1);
+}
+
+#cool-image-2 {
+    width: 49%;
+}
+
+/* Contact Us */
+
+.form-item {
+    margin: 5px 0px;
+}
+
+/* Submit Button */
+
+.submit-button {
+    margin: 5px 0px;
+    padding: 10px, 15px;
+    background: #446699;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    transition: background 400ms ease;
+}
+
+.submit-button:hover {
+    background: #112244;
+}
+
+/* Troll Photo */
+
+#contact-form {
+    position: absolute;
+    display: inline-block;
+    width: 250px;
+}
+
+.troll-photos {
+    position: relative;
+}
+
+#troll-photo-1 {
+    border: none;
+    position: absolute;
+    height: 125px;
+    right: 0;
+    
+    animation-name: first;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#troll-photo-2 {
+    border: none;
+    position: absolute;
+    height: 125px;
+    right: 0;
+
+    animation-name: second;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#troll-photo-3 {
+    border: none;
+    position: absolute;
+    height: 125px;
+    right: 0;
+
+    animation-name: third;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes first {
+    0% {opacity: 1;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes second {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    50% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes third {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 1;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+/*
+
+Specificity Hierarchy
+
+Inline Style -> style="color: red;"
+IDs -> #navbar
+Classes, Attributes and Pseudo-Classes -> .subtitles / img[src="../images"] / h2:hover
+Elements and Pseudo-Elements -> div / ::backdrop
+
+*/
+
+/* 
+
+Advanced Selectors
+
+h2 + a -> Means every link following a h2 header
+h2 ~ a -> Means every link following a h2 header with the same parents
+ul > li -> Means every list item that is a child (Direct descendant) of an unordered list
+ul li -> Means every list item that is a descendant of an unordered list
+
+img[src ^= "../images/"] -> Every image with src starting with said path
+img[src $= "../images/"] -> Every image with src ending with said path
+img[src *= "../images/"] -> Every image with src containing said path
+h2[class~=article-subtitle] -> Every h2 header with said class in a whitespace separated string
+h2[class|=article-subtitle] -> Every h2 header with said class with something behind it with a dash
+
+background-size: cover -> Proportion may be distorted to fill the space
+background-size: contain -> Proportion is maintained so image may be repeated to fill the space
+
+*/
+
+/*
+
+Units of Measurements
+
+height: 10cm / 10mm -> Absolute measurements
+height: 400px -> Pixels which is an absolute unit (Height of 400 px)
+height: 400pt -> Points which is slightly larger than pixel
+height: 400pc -> Picas which is larger than points
+
+height: 100% -> Percentage which is a relative unit (100% of parent's height)
+font-size: 2em -> Twice the size of the standard font size
+height: 100vh -> 100% of the view port's height
+height: 50vw -> 50% of the view port's width
+
+*/
+
+/*
+
+The CSS Box Model:
+Content -> Padding -> Border -> Margin
+
+padding: 40px -> 40px of padding on each side
+padding: 10px 20px -> 10px top and bottom / 20px left and right
+padding: 10px 20px 30px 40px -> 10px top / 20px right / 30px bottom / 40px left
+margin: 40px -> 40px of margin on each side
+margin: 10px 20px -> 10px top and bottom / 20px left and right
+margin: 10px 20px 30px 40px -> 10px top / 20px right / 30px bottom / 40px left
+
+Block Display -> Occupies a new line [Div]
+Inline Display -> Doesn't start on a new line [Span]
+Inline-Block -> Doesn't start on a new line but has a block-level spacing [Images]
+
+float -> left / right / inherit / none
+display -> inline / block / inline-block / none
+
+*/
+
+/*
+
+Flex Boxes
+
+flex-grow -> When above the flex-basis, the proportion of excess space to give the item
+flex-shrink -> When below the flex-basis, the proportion of shrinking width assigned to each item
+flex-basis -> Minimum width for flex-grow to apply
+
+flex: grow shrink basis -> Default to '1 1 basis' meaning grow and shrink at the same rate
+
+align-self: flex-start / center / flex-end -> Where the item is placed relative to container's height
+
+*/
+
+/*
+
+Grids
+
+grid-template-columns -> Defines the track sizing functions of the grid columns
+grid-template-rows -> Defines the track sizing functions of the grid rows
+
+grid-column-gap: 100px -> The spacing between grid columns
+grid-row-gap: 100px -> The spacing between grid rows
+grid-gap: 100px 50px -> Sets row gap to 100px and column gap to 50px
+
+grid-column: 1 / 3 -> Indicates that a template starts at column 1 and ends at column 3
+grid-column: 1 / span 2 -> Indicates that a template starts at column 1 for 2 grids
+grid-row: 1 / 3 -> Indicates that a template starts at row 1 and ends at row 3
+grid-row: 1 / spans 2 -> Indicates that a template starts at row 1 for 2 grids
+grid-area: row start / column start / row end / column end
+
+*/
+
+/* 
+
+Transition & Transformation & Animation
+
+transition: attribute duration transition-type delay
+
+transform: translate(x, y)-> Positive x for right and Positive y for up
+transform: scale(x) -> Scale by a magnitude of x
+transform: rorate(deg) -> Negative for anti-clockwise and positive for clockwise
+transform: skewX(deg) / skewY(deg) -> Positive for skewing left / bottom and negative for skewing right / top
+transform: matrix(scaleX, skewY, skewX, scaleY, translateX, translateY)
+
+animation: animation-name animation-duration animation-type animation-delay animation-iteration animation-direction
+
+*/

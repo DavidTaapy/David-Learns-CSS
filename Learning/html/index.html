@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>My Website</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 class="title">Learning HTML & CSS</h1>
+    <p>The following website was created when I am trying to learn HTML and CSS by watching and coding along to Jad
+        Khalili's video on FreeCodeCamp.Org! Click
+        <a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=4660s">here </a>
+        to find the video! I have nothing else to say so lemme add some dummy text for aesthetic purposes!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos fugit eaque nam doloremque ab esse itaque
+        perferendis veritatis ea laudantium, in reprehenderit. Sequi, vero quibusdam!
+    </p>
+
+    <h2 class="subtitle">Stuff I Learnt - Gradients</h2>
+    <div id="div-gradient-1" class="gradient-text">
+        I take up half the height and 100% of the width relative to the screen size!
+    </div>
+
+    <h2 class="subtitle">Stuff I Learnt - Flex Boxes</h2>
+    <div class="container">
+        <div class="container-item" style="order: 7;">S</div>
+        <div class="container-item" style="order: 6;">D</div>
+        <div class="container-item" style="order: 5;">N</div>
+        <div class="container-item" style="order: 4;">E</div>
+        <div class="container-item" style="order: 3;">I</div>
+        <div class="container-item" style="order: 2;">R</div>
+        <div class="container-item" style="order: 1;">F</div>
+        <div class="container-item" style="order: 10;">Y</div>
+        <div class="container-item" style="order: 9;">E</div>
+        <div class="container-item" style="order: 8;">H</div>
+    </div>
+
+    <h2 class="subtitle">Stuff I Learnt - Grids</h2>
+    <div style="padding: 0px 5px; background: mediumaquamarine;">
+        <div class="grid-container">
+            <div class="grid-item" style="grid-area: 1 / 3 / span 1 / span 1">H</div>
+            <div class="grid-item" style="grid-area: 1 / 4 / span 1 / span 1">E</div>
+            <div class="grid-item" style="grid-area: 1 / 5 / span 1 / span 1">Y</div>
+            <div class="grid-item" style="grid-area: 2 / 1 / span 1 / span 1">F</div>
+            <div class="grid-item" style="grid-area: 2 / 2 / span 1 / span 1">R</div>
+            <div class="grid-item" style="grid-area: 2 / 3 / span 1 / span 1">I</div>
+            <div class="grid-item" style="grid-area: 2 / 4 / span 1 / span 1">E</div>
+            <div class="grid-item" style="grid-area: 2 / 5 / span 1 / span 1">N</div>
+            <div class="grid-item" style="grid-area: 2 / 6 / span 1 / span 1">D</div>
+            <div class="grid-item" style="grid-area: 2 / 7 / span 1 / span 1">S</div>
+        </div>
+    </div>
+
+    <h2 class="subtitle">Stuff I Learnt - Images</h2>
+    <img id="cool-image-1" src="../images/CoolFireThing.jpg">
+    <img id='cool-image-2' src="../images/CoolFireThing.jpg">
+
+    <h2 class="subtitle">Stuff I Learnt - Lists</h2>
+    <p>
+    <ul>
+        <li>First child is red!</li>
+        <li>Normal child is black!</li>
+        <li>Normal child is black!</li>
+        <!-- Removing the bullet point using list-style = none -->
+        <li style="list-style: none">
+            <ol>
+                <li>4th item is green but I'm a first child too so I'm red!</li>
+                <li>4th item is green so I'm green!</li>
+                <li>4th item is green so I'm green!</li>
+                <li>4th item is green but I'm a last child too so I'm blue!</li>
+            </ol>
+        </li>
+        <li>Normal child is black!</li>
+        <li>Normal child is black!</li>
+        <li>Last child is blue!</li>
+    </ul>
+    </p>
+
+    <h2 class="subtitle" id="contact-us">Contact Us</h2>
+    <form id="contact-form">
+        <input type="text" class="form-item" placeholder="Fullname">
+        <br>
+        <input type="text" class="form-item" placeholder="Email">
+        <br>
+        <textarea class="form-item"></textarea>
+        <br>
+        <button class="submit-button">Submit</button>
+    </form>
+    <div class="troll-photos">
+        <img id="troll-photo-1" src="../images/Mickey Mouse Smile.jpg">
+        <img id="troll-photo-2" src="../images/Mickey Mouse Troll.png">
+        <img id="troll-photo-3" src="../images/Mickey Mouse Walk.jpg">
+    </div>
+
+</body>
+
+</html>
