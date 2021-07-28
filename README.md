@@ -22,4 +22,4 @@ The challenge folder consists of a styling challenge that Jad has authored.
 
 ## Snapshots
 
-![Snapshot] (/SnapShot/Learning.PNG)
+![Snapshots](/SnapShot/Learning.PNG)
