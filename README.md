@@ -19,7 +19,3 @@ The learning folder consists of various topics covered in the video including an
 - Transitions
 
 The challenge folder consists of a styling challenge that Jad has authored.
-
-## Snapshots
-
-![Snapshots](/SnapShot/Learning.PNG)
