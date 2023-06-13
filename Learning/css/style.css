@@ -179,6 +179,14 @@ img[src^="../images/"] {
 
 .troll-photos {
     position: relative;
+    margin-right: 25px;
+}
+
+.troll-photo {
+    width: 25vh;
+    height: 75vh;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 #troll-photo-1 {
